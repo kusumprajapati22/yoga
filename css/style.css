@@ -266,6 +266,41 @@ a:focus {
 }
 
 
+   .navbar-toggler {
+  border: 2px solid black !important;  /* Black border */
+  outline: none;
+  padding: 5px;
+}
+
+/* Custom black icon bars */
+.navbar-toggler-icon {
+  background-image: none !important;
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+
 /*******************************/
 /********** Hero CSS ***********/
 /*******************************/

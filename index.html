@@ -16,6 +16,7 @@
         rel="stylesheet">
 
     <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -25,11 +26,31 @@
 
     <!-- Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Change color of arrows */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #ff6600;
+            /* Change this to any color you want */
+        }
+
+        /* Optional: Increase size */
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 24px;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Top Bar Start -->
-    <div class="top-bar d-none d-md-block">
+    <!-- <div class="top-bar d-none d-md-block">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8">
@@ -41,7 +62,7 @@
                         </div>
                         <div class="text">
                             <i class="fa fa-phone-alt"></i>
-                            <h2>+123 456 7890</h2>
+                            <h2>9</h2>
                             <p>For Appointment</p>
                         </div>
                     </div>
@@ -58,11 +79,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Top Bar End -->
 
     <!-- Nav Bar Start -->
-   <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
             <img src="img/logo.png" width="80px" height="80px">
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -133,13 +154,13 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-6">
                     <div class="about-img">
-                        <img src="img/image2.jpeg" alt="Image">
+                        <img src="img/image3.png" alt="Image">
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6">
                     <div class="section-header text-left">
                         <p>About Us</p>
-                        <h2>Welcome to Samatvam Yoga Uchyate</h2>
+                        <h2>Welcome to Siddhnathyogshala</h2>
                     </div>
                     <div class="about-text">
                         <p>
@@ -171,7 +192,7 @@
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                 <p>What we do</p>
-                <h2>Move to heal. Breathe to thrive</h2>
+                <h2>Our Yoga Services</h2>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
@@ -251,154 +272,13 @@
     </div>
     <!-- Service End -->
 
-
-    <!-- Class Start -->
-    
-    <div class="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                   <p>Move, Breathe, Grow</p>
-                <h2>From sunrise to sunset — Yoga that fits your day</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All Pose</li>
-                            <li data-filter=".first">Yoga at Home</li>
-                            <li data-filter=".second">Yoga at Studio</li>
-                            <li data-filter=".third">Online Yoga Class</li>
-                            <li data-filter=".fourth">Corporate Yoga</li>
-                            <li data-filter=".fifth">Pregnancy Yoga</li>
-                            <li data-filter=".sixth">Kid's Yoga</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row portfolio-container">
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="portfolio-wrap">
-                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                <img src="img/portfolio-1.jpg" alt="Portfolio Image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="portfolio-wrap">
-                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                <img src="img/portfolio-2.jpg" alt="Portfolio Image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="portfolio-wrap">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <img src="img/portfolio-3.jpg" alt="Portfolio Image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item fourth wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="portfolio-wrap">
-                            <a href="img/corporate (1).jpeg" data-lightbox="portfolio">
-                                <img src="img/corporate (1).jpeg" alt="Portfolio Image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item fifth wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="portfolio-wrap">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <img src="img/portfolio-3.jpg" alt="Portfolio Image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item sixth wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="portfolio-wrap">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <img src="img/portfolio-3.jpg" alt="Portfolio Image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="portfolio-wrap">
-                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                <img src="img/portfolio-4.jpg" alt="Portfolio Image">
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="portfolio-wrap">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <img src="img/portfolio-5.jpg" alt="Portfolio Image">
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third wow fadeInUp" data-wow-delay="1.1s">
-                        <div class="portfolio-wrap">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <img src="img/portfolio-6.jpg" alt="Portfolio Image">
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item fourth wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="portfolio-wrap">
-                            <a href="img/corporate (2).jpeg" data-lightbox="portfolio">
-                                <img src="img/corporate (2).jpeg" alt="Portfolio Image">
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item fourth wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="portfolio-wrap">
-                            <a href="img/corporate (3).jpeg" data-lightbox="portfolio">
-                                <img src="img/corporate (3).jpeg" alt="Portfolio Image">
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item fifth wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="portfolio-wrap">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <img src="img/portfolio-3.jpg" alt="Portfolio Image">
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item sixth wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="portfolio-wrap">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <img src="img/portfolio-3.jpg" alt="Portfolio Image">
-                            </a>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
-    <!-- Class End -->
-
     <!-- Testimonial Start -->
     <div class="testimonial">
         <div class="testimonial wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
                 <div class="section-header text-center">
                     <p>Testimonial</p>
-                    <h2>Our Client Say!</h2>
+                    <h2>Our Student Say!</h2>
                 </div>
                 <div class="owl-carousel testimonials-carousel">
                     <div class="testimonial-item">
@@ -407,7 +287,8 @@
                         </div>
                         <div class="testimonial-text">
                             <p>
-                                Yoga completely transformed my health journey. I used to struggle with stress and insomnia, but now I sleep better and feel calmer every day.
+                                Yoga completely transformed my health journey. I used to struggle with stress and
+                                insomnia, but now I sleep better and feel calmer every day.
                             </p>
                             <!-- <h3>Customer Name</h3> -->
                             <h4>Anjali Mehta</h4>
@@ -419,7 +300,8 @@
                         </div>
                         <div class="testimonial-text">
                             <p>
-                                After just a few weeks of yoga, my back pain reduced and my energy levels skyrocketed. It’s the best gift I gave my body.
+                                After just a few weeks of yoga, my back pain reduced and my energy levels skyrocketed.
+                                It’s the best gift I gave my body.
                             </p>
                             <!-- <h3>Customer Name</h3> -->
                             <h4>Rahul Verma</h4>
@@ -431,7 +313,8 @@
                         </div>
                         <div class="testimonial-text">
                             <p>
-                                I never thought I could feel this good without medication. Yoga helped balance my hormones and boosted my immunity naturally.
+                                I never thought I could feel this good without medication. Yoga helped balance my
+                                hormones and boosted my immunity naturally.
                             </p>
                             <!-- <h3>Customer Name</h3> -->
                             <h4>Priya Sharma</h4>
@@ -443,7 +326,8 @@
                         </div>
                         <div class="testimonial-text">
                             <p>
-                                From stiff joints to smooth flow — yoga gave me back my mobility and confidence. It’s become an essential part of my daily health routine.
+                                From stiff joints to smooth flow — yoga gave me back my mobility and confidence. It’s
+                                become an essential part of my daily health routine.
                             </p>
                             <!-- <h3>Customer Name</h3> -->
                             <h4>Vikram Desai</h4>
@@ -455,13 +339,122 @@
     </div>
     <!-- Testimonial End -->
 
-<!-- Footer Start -->
+
+    <!-- Slider Start -->
+
+    <div class="portfolio">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>Move, Breathe, Grow</p>
+                <h2>From sunrise to sunset — Yoga that fits your day</h2>
+            </div>
+
+            <div class="swiper portfolio-slider">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <a href="img/slider7.jpeg" data-lightbox="portfolio">
+                            <img src="img/slider7.jpeg" alt="Portfolio Image" />
+                        </a>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <a href="img/slider8.jpeg" data-lightbox="portfolio">
+                            <img src="img/slider8.jpeg" alt="Portfolio Image" />
+                        </a>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <a href="img/slider9.jpeg" data-lightbox="portfolio">
+                            <img src="img/slider9.jpeg" alt="Portfolio Image" />
+                        </a>
+                    </div>
+
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <a href="img/slider1.jpeg" data-lightbox="portfolio">
+                            <img src="img/slider1.jpeg" alt="Portfolio Image" />
+                        </a>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <a href="img/corporate (1).jpeg" data-lightbox="portfolio">
+                            <img src="img/corporate (1).jpeg" alt="Portfolio Image" />
+                        </a>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide">
+                        <a href="img/corporate (2).jpeg" data-lightbox="portfolio">
+                            <img src="img/corporate (2).jpeg" alt="Portfolio Image" />
+                        </a>
+                    </div>
+
+                    <!-- Slide 7 -->
+                    <div class="swiper-slide">
+                        <a href="img/corporate (3).jpeg" data-lightbox="portfolio">
+                            <img src="img/corporate (3).jpeg" alt="Portfolio Image" />
+                        </a>
+                    </div>
+
+                    <!-- Slide 8 -->
+                    <div class="swiper-slide">
+                        <a href="img/slider2.jpeg" data-lightbox="portfolio">
+                            <img src="img/slider2.jpeg" alt="Portfolio Image" />
+                        </a>
+                    </div>
+
+                    <!-- Slide 9 -->
+                    <div class="swiper-slide">
+                        <a href="img/slider3.jpeg" data-lightbox="portfolio">
+                            <img src="img/slider3.jpeg" alt="Portfolio Image" />
+                        </a>
+                    </div>
+
+                    <!-- Slide 10 -->
+                    <div class="swiper-slide">
+                        <a href="img/slider4.jpeg" data-lightbox="portfolio">
+                            <img src="img/slider4.jpeg" alt="Portfolio Image" />
+                        </a>
+                    </div>
+
+                    <!-- Slide 11 -->
+                    <div class="swiper-slide">
+                        <a href="img/slider5.jpeg" data-lightbox="portfolio">
+                            <img src="img/slider5.jpeg" alt="Portfolio Image" />
+                        </a>
+                    </div>
+
+                    <!-- Slide 12 -->
+                    <div class="swiper-slide">
+                        <a href="img/slider6.jpeg" data-lightbox="portfolio">
+                            <img src="img/slider6.jpeg" alt="Portfolio Image" />
+                        </a>
+                    </div>
+                </div>
+                <!-- Optional navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Sluder End -->
+
+    <!-- Footer Start -->
     <div class="footer wow fadeIn" data-wow-delay="0.3s">
         <div class="container-fluid">
             <div class="container">
                 <div class="footer-info">
                     <img src="img/logo.png" width="80px" height="80px">
-                    <h3>B-70, Sec-50 Noida Uttar Pradesh - 201301</h3>
+                    <h3>House No. 3 ka, Khaireegayooth, Kot Kendri, Kotkendri, Champawat, Uttarakhand, 262523</h3>
                     <div class="footer-menu">
                         <p>+91 9718640230</p>
                         <p>jogibhupendra440@gmail.com</p>
@@ -480,7 +473,7 @@
                     <div class="col-md-6">
                         <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
                     </div>
-                   <div class="col-md-6">
+                    <div class="col-md-6">
                         <p>Designed By <a href="https://www.sgwebapp.com/">SG Web App Techniques Pvt. Ltd.</a></p>
                     </div>
                 </div>
@@ -504,8 +497,31 @@
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <!-- Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        var swiper = new Swiper('.portfolio-slider', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+
 </body>
 
 </html>
